@@ -1,23 +1,24 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
-  "description": "blog",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js",
     "readme": "node ./node_modules/.bin/node-readme"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoushilu31/Tech-Blog.git"
+    "url": "git+https://github.com/zoushilu31/tech-blog.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zoushilu31/Tech-Blog/issues"
+    "url": "https://github.com/zoushilu31/tech-blog/issues"
   },
-  "homepage": "https://github.com/zoushilu31/Tech-Blog#readme",
+  "homepage": "https://github.com/zoushilu31/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
@@ -25,6 +26,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+    "express-session-expire-timeout": "^1.0.3",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
