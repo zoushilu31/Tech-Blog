@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background-color: rgb(245, 250, 219);
+}
+
+a {
+  text-decoration: none;
+  color: #5b8b00;
+  font-weight: bold;
+  transition: color .1s;
+}
+
+a:hover {
+  color: #80c501;
+}
+
+button {
+  background-color: #5b8b00;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #80c501;
+}
+
+ol li {
+  list-style: none;
+  padding: 20px;
+}
+
+textarea, input {
+  background-color: rgb(246, 250, 227);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: .5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #5b8b00;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+  background-color: black;
+  color: #5b8b00;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 2px solid black;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  background-color: #5b8b00;
+}
+
+header nav {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+header nav a,
+header nav button {
+  margin-right: 20px;
+  padding: 5px;
+  background-color: black;
+  align-items: center;
+  border-radius: 15px;
+}
+
+
+header h1 a {
+  background-color: black;
+  box-shadow: 10px 5px 5px  black;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 55px;
+  padding: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.login-form,
+.signup-form {
+  position: relative; left: 450px;
+}
+
+.btn-no-style {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #5b8b00;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+}
+
+.btn-no-style:hover {
+  background: black;
+  color: #80c501;
+}
+
+.delete-post-btn {
+background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.create-post {
+  position: relative; left: 400px;
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.post {
+  height: auto;
+  margin-bottom: 2%; 
+  background-color: rgb(193, 197, 175);
+  border: 2px #5b8b00 solid;
+  border-radius: 15px;
+}
+
+.post .title {
+ padding: 20px 0 10px 20px;
+}
+
+.post-author {
+  float: right;
+  margin-right: 30px !important;
+  background-color: black;
+  color: #5b8b00;
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px #5b8b00 solid;
+  font-size: 13px;
+}
+
+.post-body {
+ padding: 20px 20px 10px 20px;
+}
+
+.post-body a {
+ padding: 0 0 10px 20px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px #5b8b00 solid;
+}
+
+#post-body {
+  width: 50vw;
+  height: 40vh;
+  overflow: hidden scroll;
+}
+
+#taken,
+#not-found {
+  color: #5b8b00;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px #5b8b00 solid;
+  width: fit-content;
+}
+
+.post .title a {
+  padding: 10px;
+  background-color: black;
+  border-radius: 15px;
+  border: 2px #5b8b00 solid;
+  font-size: 20px;
+  color: #5b8b00;
+  margin: auto;
+}
+
+.post .title a:hover {
+  color: #80c501;
+  transition: .4s;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+  padding-left: 20px;
+  width: fit-content;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+  border-radius: 15px;
+  border: 2px #5b8b00 solid;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  width: fit-content;
+  border-radius: 15px;
+  border: 2px #5b8b00 solid;
+  padding: 4px;
+  background-color: black;
+  color: #5b8b00;
+  font-size: 90%;
+  margin-bottom: .5%;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%; 
+}
+footer {
+  background-color: #5b8b00;
+}
+
+
+footer h2{
+  color: #5b8b00;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin: 10px 400px 10px 400px;
+  border-radius: 15px;
+}
+
+.hide {
+  display: none;
+}
