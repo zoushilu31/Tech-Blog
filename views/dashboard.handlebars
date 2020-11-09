@@ -1,0 +1,17 @@
+<button class="create-post"><i class="fas fa-plus"></i> Create New Blog Post</button>
+
+{{#if posts.length}}
+<section>
+    <h2>Posts by You: </h2>
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/nav-createPost.js"></script>

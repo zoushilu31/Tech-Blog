@@ -3,20 +3,7 @@
   "version": "1.0.0",
   "description": "blog",
   "main": "server.js",
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "connect-session-sequelize": "^7.0.4",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "express-session": "^1.17.1",
-    "inquirer": "^7.3.3",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
-  },
-  "devDependencies": {
-    "node-readme": "^0.1.9"
-  },
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -31,5 +18,19 @@
   "bugs": {
     "url": "https://github.com/zoushilu31/Tech-Blog/issues"
   },
-  "homepage": "https://github.com/zoushilu31/Tech-Blog#readme"
+  "homepage": "https://github.com/zoushilu31/Tech-Blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "node-readme": "^0.1.9"
+  }
 }
