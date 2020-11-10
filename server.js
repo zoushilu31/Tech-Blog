@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./controllers');
-const postroutes = require('./controllers/api/post-routes');
+// const postroutes = require('./controllers/api/post-routes');
 const sequelize = require('./config/connection');
 
 // Javascript Helpers
@@ -47,7 +47,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // turn on routes
 app.use(routes);
-app.use(postroutes);
+// app.use(postroutes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
