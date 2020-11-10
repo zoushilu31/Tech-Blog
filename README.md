@@ -28,6 +28,7 @@ blog
  - **npm run test** : `echo "Error: no test specified" && exit 1`
  - **npm run start** : `node server.js`
  - **npm run readme** : `node ./node_modules/.bin/node-readme`
+ - `https://shilu-tech-blog.herokuapp.com/`
 
 ## Dependencies
 
